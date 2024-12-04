@@ -32,6 +32,28 @@ section {
   height: 100vh;
 }
 
+.mainSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-image: linear-gradient(rgb(103, 138, 207), rgb(97, 97, 97));
+  border: rgb(103, 138, 207);
+  border-style: solid;
+  color: white;
+}
+  
+.toDoApp {
+max-height: 500px;
+max-width: 500px;
+border: 2px solid rgb(103, 138, 207);
+padding: 10px;
+}
+
+
 /* FOOTER */
 footer {
   display: flex;
