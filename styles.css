@@ -40,10 +40,17 @@ section {
 }
 
 button {
-  background-image: linear-gradient(rgb(103, 138, 207), rgb(97, 97, 97));
-  border: rgb(103, 138, 207);
-  border-style: solid;
-  color: white;
+  background-color: rgb(175, 205, 249);
+  border-style: none;
+  transition-duration: 0.1s;
+}
+
+button:hover {
+  background-color: rgb(132, 163, 229);
+}
+
+button:active {
+  background-color: #ffffff;
 }
   
 .toDoApp {

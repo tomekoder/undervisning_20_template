@@ -16,4 +16,26 @@ addButton.addEventListener("click", function() {
     const toDoItem = document.createElement("li");
     toDoItem.textContent = inputFieldValue;
     toDoList.appendChild(toDoItem);
+
+    const finishedButton = document.createElement("button");
+    finishedButton.textContent = "ferdig"
+    toDoItem.appendChild(finishedButton);
+
+    finishedButton.addEventListener("click", function() {
+        console.log("woof");
+
+        toDoItem.style.textDecoration = "line-through";
+    })
+
+    // lag en slett-knapp med samme teknikk som over
+
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "slett"
+    toDoItem.appendChild(deleteButton)
+
+    deleteButton.addEventListener("click", function() {
+        console.log("meow");
+
+        toDoItem.remove();
+    });
 });
