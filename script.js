@@ -21,11 +21,16 @@ addButton.addEventListener("click", function() {
     finishedButton.textContent = "ferdig"
     toDoItem.appendChild(finishedButton);
 
+    let isFinished = false
+
     finishedButton.addEventListener("click", function() {
         console.log("woof");
 
         toDoItem.style.textDecoration = "line-through";
+        isFinished = true;
+    
     })
+
 
     // lag en slett-knapp med samme teknikk som over
 
@@ -34,8 +39,18 @@ addButton.addEventListener("click", function() {
     toDoItem.appendChild(deleteButton)
 
     deleteButton.addEventListener("click", function() {
-        console.log("meow");
+        if (isFinished) {  
+            console.log("meow"); 
+            toDoItem.remove();
+        }
+        else {
 
-        toDoItem.remove();
+        }
+
+        
+        
     });
-});
+
+
+    
+}); 
